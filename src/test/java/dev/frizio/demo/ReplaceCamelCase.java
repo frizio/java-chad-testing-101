@@ -6,8 +6,7 @@ import java.lang.reflect.Method;
 
 class ReplaceCamelCase extends DisplayNameGenerator.Standard {
 
-    public ReplaceCamelCase() {
-    }
+    public ReplaceCamelCase() { }
 
     public String generateDisplayNameForClass(Class<?> testClass) {
         return this.replaceCapitals(super.generateDisplayNameForClass(testClass));
@@ -26,4 +25,5 @@ class ReplaceCamelCase extends DisplayNameGenerator.Standard {
         name = name.replaceAll("([0-9]+)", " $1");
         return name;
     }
+
 }
