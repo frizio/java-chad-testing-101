@@ -4,6 +4,7 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayNameGeneration(ReplaceCamelCase.class) // Simple // ReplaceUnderScores
 class DemoUtilsTest {
 
     DemoUtils demoUtils;
@@ -38,7 +39,6 @@ class DemoUtilsTest {
         assertEquals(6, demoUtils.add(2, 4), "2+4 must be 6");
         assertNotEquals(6, demoUtils.add(1, 9), "1+9 must not be 6");
     }
-
 
     @Test
     void testNullAndNotNull() {
